@@ -1,0 +1,13 @@
+<div class="content-wrapper">
+  <app-simplesidebar></app-simplesidebar>
+  <div class="content">
+    <h2>当季新番</h2>
+    <section class="results">
+      <app-bangumi-card
+        *ngFor="let Item of Items" 
+        [Item]="Item"
+      >
+      </app-bangumi-card>
+    </section>
+  </div>
+</div>
